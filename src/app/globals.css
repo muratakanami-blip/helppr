@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f5f5f3;
+  --bg-white: #ffffff;
+  --bg-subtle: #f0efed;
+  --navy: #1a2540;
+  --navy-mid: #2c3e60;
+  --navy-light: #e8ecf4;
+  --gold: #b8923a;
+  --gold-light: #d4a84b;
+  --gold-bg: #fdf6ec;
+  --gold-border: #e8d5b0;
+  --red: #c0392b;
+  --red-bg: #fdf2f2;
+  --red-border: #f5c6c3;
+  --green: #1a7c4b;
+}
+
+body {
+  background-color: var(--bg);
+  color: #1a1a1a;
+  min-height: 100vh;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-custom {
+  animation: spin 0.9s linear infinite;
+}
